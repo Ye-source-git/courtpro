@@ -2,7 +2,7 @@
   "name": "CourtPro",
   "short_name": "CourtPro",
   "description": "Professional coaching platform for tennis and pickleball",
-  "start_url": "/app",
+  "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait-primary",

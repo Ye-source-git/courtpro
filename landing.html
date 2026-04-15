@@ -12,17 +12,17 @@
   <link rel="manifest" href="/manifest.json"/>
   <link rel="apple-touch-icon" href="/icons/icon-192.png"/>
   <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-96.png"/>
-  <meta name="description" content="CourtPro - The professional coaching platform for tennis and pickleball clubs, pros, and players."/>
+  <meta name="description" content="CourtPro — The professional coaching platform for tennis and pickleball clubs, pros, and players."/>
   <meta property="og:title" content="CourtPro"/>
   <meta property="og:description" content="Professional coaching management for tennis and pickleball."/>
   <meta property="og:type" content="website"/>
   <meta property="og:image" content="/icons/icon-512.png"/>
-  <title>CourtPro - Professional Coaching Platform</title>
+  <title>CourtPro — Professional Coaching Platform</title>
   <link rel="stylesheet" href="/style.css"/>
 </head>
 <body>
 
-<!--  AUTH SCREEN  -->
+<!-- ── AUTH SCREEN ────────────────────────────────────────── -->
 <div id="auth-screen" class="auth-wrap">
 
   <!-- Left panel: marketing (desktop only) -->
@@ -45,18 +45,18 @@
       <ul class="auth-left-features">
         <li>Smart session notes with video coaching</li>
         <li>Skill tracking that shows real progress</li>
-        <li>Recurring lessons & earnings dashboards</li>
+        <li>Recurring lessons &amp; earnings dashboards</li>
         <li>Club analytics and hiring pipeline</li>
         <li>Works for Tennis and Pickleball</li>
       </ul>
       <div class="auth-left-sports" style="margin-top:40px;">
-        <span class="auth-left-sport-pill">Tennis Tennis</span>
-        <span class="auth-left-sport-pill">Pickleball Pickleball</span>
-        <span class="auth-left-sport-pill">Padel Padel</span>
+        <span class="auth-left-sport-pill">🎾 Tennis</span>
+        <span class="auth-left-sport-pill">🏓 Pickleball</span>
+        <span class="auth-left-sport-pill">🎮 Padel</span>
       </div>
     </div>
     <div style="position:relative;z-index:1;">
-      <p style="font-size:12px;color:rgba(255,255,255,0.4);"> 2025 CourtPro  Professional coaching management</p>
+      <p style="font-size:12px;color:rgba(255,255,255,0.4);">© 2025 CourtPro · Professional coaching management</p>
     </div>
   </div>
 
@@ -110,7 +110,7 @@
     <!-- SIGN UP -->
     <div id="panel-signup" style="display:none;">
       <h2 class="auth-heading">Create your account</h2>
-      <p class="auth-sub">Join CourtPro - free to get started</p>
+      <p class="auth-sub">Join CourtPro — free to get started</p>
 
       <div class="form-group">
         <label class="form-label">Full name</label>
@@ -129,15 +129,15 @@
         <label class="form-label">I am a...</label>
         <div class="role-picker">
           <div class="role-option" data-role="pro" onclick="selectRole('pro')">
-            <span class="role-icon">Tennis</span>
+            <span class="role-icon">🎾</span>
             <span class="role-label">Teaching Pro</span>
           </div>
           <div class="role-option" data-role="manager" onclick="selectRole('manager')">
-            <span class="role-icon">Club</span>
+            <span class="role-icon">🏛️</span>
             <span class="role-label">Club Manager</span>
           </div>
           <div class="role-option" data-role="client" onclick="selectRole('client')">
-            <span class="role-icon">Player</span>
+            <span class="role-icon">🎯</span>
             <span class="role-label">Player</span>
           </div>
         </div>
@@ -146,11 +146,11 @@
       <div class="form-group">
         <label class="form-label">Primary sport</label>
         <select id="su-sport">
-          <option value="tennis">Tennis Tennis</option>
-          <option value="pickleball">Pickleball Pickleball</option>
-          <option value="padel">Padel Padel</option>
-          <option value="squash"> Squash</option>
-          <option value="badminton"> Badminton</option>
+          <option value="tennis">🎾 Tennis</option>
+          <option value="pickleball">🏓 Pickleball</option>
+          <option value="padel">🎮 Padel</option>
+          <option value="squash">🔴 Squash</option>
+          <option value="badminton">🏸 Badminton</option>
         </select>
       </div>
 
@@ -187,7 +187,7 @@
   </div><!-- /auth-right -->
 </div><!-- /auth-screen -->
 
-<!--  APP SCREEN  -->
+<!-- ── APP SCREEN ──────────────────────────────────────────── -->
 <div id="app-screen" style="display:none;">
 
   <!-- Sidebar -->
@@ -275,19 +275,10 @@
     <div style="font-size:12px;opacity:0.85;">Add to your home screen for the full experience</div>
   </div>
   <button id="pwa-install-btn" style="background:white;color:var(--brand);border:none;border-radius:8px;padding:8px 16px;font-size:13px;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;">Install</button>
-  <button onclick="document.getElementById('pwa-install-banner').style.display='none';localStorage.setItem('pwa-dismissed','1');" style="background:rgba(255,255,255,0.2);color:white;border:none;border-radius:8px;padding:8px 12px;font-size:13px;cursor:pointer;font-family:'Inter',sans-serif;"></button>
+  <button onclick="document.getElementById('pwa-install-banner').style.display='none';localStorage.setItem('pwa-dismissed','1');" style="background:rgba(255,255,255,0.2);color:white;border:none;border-radius:8px;padding:8px 12px;font-size:13px;cursor:pointer;font-family:'Inter',sans-serif;">✕</button>
 </div>
 
-<!-- ==========================================
-     PASTE YOUR SUPABASE CREDENTIALS HERE
-     Get them from: supabase.com  your project  Settings  API
-     ========================================== -->
-<script>
-  window.SUPABASE_URL      = 'https://ktsdpcbxggsmmxxpvyvt.supabase.co';
-  window.SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt0c2RwY2J4Z2dzbW14eHB2eXZ0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUzMDM0MDAsImV4cCI6MjA5MDg3OTQwMH0.v2UR-dAP0jLW7fM2pLSfOPTPikGr-pnVFuHfKi1CppI';
-</script>
-<!-- ========================================== -->
-
+<!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="/app.js"></script>
 <script>

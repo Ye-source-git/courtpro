@@ -1,7 +1,7 @@
 // CourtPro Service Worker v6
 // Fixed: clone response before caching
-const CACHE = 'courtpro-v6';
-const CORE = ['/courtpro.html', '/app.js', '/style.css', '/manifest.json'];
+const CACHE = 'courtpro-v7';
+const CORE = ['/index.html', '/app.js', '/style.css', '/manifest.json'];
 
 self.addEventListener('install', function(e) {
   self.skipWaiting();
@@ -50,7 +50,7 @@ self.addEventListener('fetch', function(e) {
       return caches.match(e.request).then(function(cached) {
         if (cached) return cached;
         if (e.request.mode === 'navigate') {
-          return caches.match('/courtpro.html');
+          return caches.match('/index.html');
         }
         return new Response('Offline', { status: 503 });
       });
